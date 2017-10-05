@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Pokemon
+  div(class="btn btn-success") Red
+  div
+    each poke in pokemon
+      li: a(href='/pokemon/' + poke._id)= poke.name
